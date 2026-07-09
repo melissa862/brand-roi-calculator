@@ -5,9 +5,11 @@ import { calculate } from "@/lib/calc/engine";
 import type {
   CalculatorGoal,
   CalculatorInputs,
+  CalculatorResult,
   CalculatorTimeframeDays,
 } from "@/lib/calc/types";
 import type { ContentType, Industry } from "@/lib/calc/benchmarks";
+import ResultsPanel from "./ResultsPanel";
 
 const DEFAULT_INPUTS: CalculatorInputs = {
   followers: 25000,
@@ -41,10 +43,13 @@ const labelClassName = "block text-sm font-medium text-foreground/80";
 
 export default function CalculatorForm() {
   const [inputs, setInputs] = useState<CalculatorInputs>(DEFAULT_INPUTS);
+  const [calculatorResult, setCalculatorResult] = useState<CalculatorResult>(
+    () => calculate(DEFAULT_INPUTS)
+  );
 
   useEffect(() => {
     const result = calculate(inputs);
-    console.log("Calculator result:", result);
+    setCalculatorResult(result);
   }, [inputs]);
 
   function updateNumber<K extends keyof CalculatorInputs>(
@@ -253,6 +258,10 @@ export default function CalculatorForm() {
             </div>
           </div>
         </section>
+      </div>
+
+      <div className="mt-12">
+        <ResultsPanel result={calculatorResult} />
       </div>
     </form>
   );
