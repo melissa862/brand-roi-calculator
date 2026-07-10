@@ -22,7 +22,8 @@ const DEFAULT_INPUTS: CalculatorInputs = {
   timeframeDays: 30,
 };
 
-const CONTENT_TYPES: ContentType[] = ["article", "carousel", "video"];
+const CONTENT_TYPES: ContentType[] = ["image", "carousel", "video"];
+const CONTENT_TYPE_LABELS: Record<ContentType, string> = { image: "Image Post", carousel: "Carousel", video: "Video" };
 
 const INDUSTRIES: Industry[] = [
   "SaaS",
@@ -223,7 +224,7 @@ export default function CalculatorForm() {
             >
               {CONTENT_TYPES.map((type) => (
                 <option key={type} value={type} className="bg-background">
-                  {type.charAt(0).toUpperCase() + type.slice(1)}
+                  {CONTENT_TYPE_LABELS[type]}
                 </option>
               ))}
             </select>
