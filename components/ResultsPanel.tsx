@@ -480,7 +480,7 @@ export default function ResultsPanel({ result, inputs }: ResultsPanelProps) {
               Citrine Creators
             </p>
             <p className="mt-2 max-w-md text-[11px] leading-relaxed text-white/35">
-              Estimates based on industry benchmarks; actual results vary.
+              Reach benchmarks: The Shield Index, March 2026, 50,000 posts, strong-post tier (top 25%). Actual results vary.
             </p>
           </div>
           <p
