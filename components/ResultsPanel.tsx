@@ -316,7 +316,7 @@ export default function ResultsPanel({ result, inputs }: ResultsPanelProps) {
             <span>Creator partnership is</span>{" "}
             <AnimatedValue
               value={roiLabel}
-              className="whitespace-nowrap text-2xl sm:text-inherit"
+              className="whitespace-nowrap text-5xl font-black leading-none sm:text-6xl md:text-7xl"
             >
               {roiLabel}x
             </AnimatedValue>{" "}
