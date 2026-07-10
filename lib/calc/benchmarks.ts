@@ -59,9 +59,9 @@ export const benchmarks: BenchmarksConfig = {
     },
   },
   contentTypeReachFactors: {
-    image: 0.22,
+    image: 0.37,
     carousel: 0.28,
-    video: 0.35,
+    video: 0.30,
   },
   adHiddenCosts: {
     creativeDevCost: 2500,
