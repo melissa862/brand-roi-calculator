@@ -346,7 +346,7 @@ export default function ResultsPanel({ result, inputs }: ResultsPanelProps) {
             >
               Creator Partnership
             </p>
-            <p className="whitespace-nowrap text-5xl font-black leading-none sm:text-6xl md:text-7xl"
+            <p className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
               <AnimatedValue value={creatorCostLabel}>
                 {creatorCostLabel}
               </AnimatedValue>
