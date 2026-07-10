@@ -5,7 +5,7 @@ export type Industry =
   | "Enterprise Software"
   | "Other B2B";
 
-export type ContentType = "article" | "carousel" | "video";
+export type ContentType = "image" | "carousel" | "video";
 
 export type IndustryBenchmarks = {
   cpm: number;
@@ -59,7 +59,7 @@ export const benchmarks: BenchmarksConfig = {
     },
   },
   contentTypeReachFactors: {
-    article: 0.18,
+    image: 0.22,
     carousel: 0.28,
     video: 0.35,
   },
