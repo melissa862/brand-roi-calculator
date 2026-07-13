@@ -9,7 +9,7 @@ export default function Home() {
             CITRINE CREATORS
           </p>
           <h1 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
-            Brand ROI Calculator
+            Brand ROI App
           </h1>
           <p className="mx-auto mt-2 max-w-xl text-sm text-foreground/60 sm:text-base">
             Compare creator partnerships against equivalent LinkedIn ad spend.
